@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App-header {
+  background-color: #4a4e69;
+  padding: 40px; /* Increased padding for a modern look */
+  border-radius: 8px;
+}
+
+.App-link {
+  color: #9a8c98;
+  transition: color 0.3s;
+  padding: 10px; /* Added padding for better click area */
+}
+
+.App-link:hover {
+  color: #22223b;
+}
+
+/* Centering the form */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Move form up */
+  padding-top: 20px; /* Add some padding to the top */
+}
+
+/* Input Styles */
+input {
+  margin-bottom: 15px; /* Added space between input fields and buttons */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for input fields */
+  display: block; /* Ensure input fields are block elements */
+}
+
+/* Button Styles */
+button {
+  background-color: #22223b;
+  color: white;
+  border: none;
+  padding: 15px 30px; /* Increased padding for buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Ensure buttons are block elements */
+  margin-top: 10px; /* Add margin to separate buttons from inputs */
+  text-align: center; /* Center the button text */
+  width: 100%; /* Ensure buttons take full width */
+  max-width: 400px; /* Set a maximum width for buttons */
+}
+
+button:hover {
+  background-color: #4a4e69;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App-header {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  button {
+    width: 100%;
+  }
+}
