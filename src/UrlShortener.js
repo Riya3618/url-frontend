@@ -14,7 +14,7 @@ const fetchShortUrls = async () => {
 try {
 const response = await fetch('/api/shortUrls', {
 headers: {
-Authorization: `Bearer ${token}`, // Pass the token for authentication
+Authorization: `Bearer ${token}`,
 },
 });
 if (!response.ok) {
@@ -38,7 +38,7 @@ const response = await fetch('/shortUrls', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',
-Authorization: `Bearer ${token}`, // Add the token to the request header
+Authorization: `Bearer ${token}`, 
 },
 body: JSON.stringify({ full: fullUrl }),
 });
@@ -78,6 +78,7 @@ required
 <li key={shortUrl.short}>
 {shortUrl.full} - <a href={shortUrl.full} target="_blank" rel="noopener noreferrer">
 {shortUrl.short}
+
 </a>
 </li>
 ))}
